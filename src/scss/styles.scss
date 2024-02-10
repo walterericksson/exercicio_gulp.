@@ -1,0 +1,37 @@
+// Definindo variáveis
+$primary-color: #182C61;
+$secondary-color: #44bd32;
+$spacing: 16px;
+
+// Estilos para o cabeçalho
+header {
+  background-color: $primary-color;
+  padding: $spacing;
+  color: white;
+}
+
+// Estilos para os links do menu
+.menu li {
+  display: inline-block;
+  margin-right: $spacing;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+// Estilos para os botões
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: $secondary-color;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
+}
